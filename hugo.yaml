@@ -1,0 +1,11 @@
+baseURL: /
+locale: en-US
+title: catalogue — analogue.press
+params:
+  description: catalogue, a book by analogue.press. Explore the pages and register your interest in receiving a copy.
+  # Add only the Tally form ID (from tally.so/r/FORM_ID) to replace the native form.
+  tallyFormId: ""
+disableKinds: [taxonomy, term, RSS]
+noBuildLock: true
+minify:
+  minifyOutput: true

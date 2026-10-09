@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ "images/catalogue-spread.jpg" | absURL }}">
+  <meta name="theme-color" content="#0f0e0e">
+  {{ if not .IsHome }}<meta name="robots" content="noindex">{{ end }}
+  {{ with resources.Get "css/global.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+  {{ end }}
+  <script src="/js/catalogue.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="https://analogue.press" aria-label="analogue.press">
+      <img src="/brand/logos/analogue-mark.svg" alt="">
+      <img src="/brand/logos/analogue-wordmark.svg" alt="Analogue">
+    </a>
+    <nav aria-label="Main navigation"><a href="/#inside">Inside the book</a><a href="/#interest">Request a copy <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">{{ block "main" . }}{{ end }}</main>
+  <footer class="site-footer"><a href="https://analogue.press">analogue.press <span aria-hidden="true">↗</span></a><span>A book. A set of shared references.</span><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>

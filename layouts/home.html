@@ -2,48 +2,50 @@
 <article>
   <section class="hero" aria-labelledby="book-title">
     <div class="book-introduction">
-      <p class="eyebrow">A book by analogue.press</p>
+      <p class="eyebrow">An imprint of <a href="https://analogue.press">Analogue Press</a></p>
+      <img class="headline-image" src="/images/catalogue-headline.jpg" alt="An antique celestial illustration with a figure holding astronomical instruments beneath the moon and stars" fetchpriority="high">
       <h1 id="book-title">catalogue</h1>
-      <p class="standfirst">A common set<br>of references.</p>
+      <p class="standfirst"><em>of ideas</em></p>
       <div class="book-description">
         <p>On inquiry, on ways of knowing, on the shape of a group and the things it might make possible.</p>
         <p>A look inside Analogue: its ideas, its work, and the references that bring people together.</p>
       </div>
       <a class="button" href="#interest">Register your interest <span aria-hidden="true">↗</span></a>
       <p class="small-note">Copies will be sent to selected readers.</p>
-      <div class="book-index"><span>01 / catalogue</span><span>analogue.press</span></div>
     </div>
-    <div class="gallery" aria-label="Photographs of catalogue">
-      <figure>
-        <img id="gallery-image" src="/images/catalogue-spread.jpg" alt="An open copy of catalogue held outdoors, showing the Analogue Curriculum and its shared references" width="1600" height="1292" fetchpriority="high">
-        <figcaption><span id="gallery-caption" aria-live="polite">The Analogue Curriculum</span><span id="gallery-number">01 / 03</span></figcaption>
-      </figure>
-      <div class="gallery-controls" aria-label="Choose a photograph">
-        <button type="button" class="thumbnail" data-image="/images/catalogue-spread.jpg" data-alt="An open copy of catalogue held outdoors, showing the Analogue Curriculum and its shared references" data-caption="The Analogue Curriculum" aria-pressed="true" aria-label="Show the Analogue Curriculum spread"><img src="/images/catalogue-spread.jpg" alt="" width="80" height="64"></button>
-        <button type="button" class="thumbnail" data-image="/images/catalogue-contents.jpg" data-alt="The contents page of catalogue, listing essays on inquiry, ways of knowing, philanthropy, and the Analogue Curriculum" data-caption="A catalogue of ideas" aria-pressed="false" aria-label="Show the contents page"><img src="/images/catalogue-contents.jpg" alt="" width="64" height="80"></button>
-        <button type="button" class="thumbnail" data-image="/images/catalogue-detail.jpg" data-alt="A close-up of a page of catalogue with a quotation by Arthur Eddington" data-caption="A note on discovery" aria-pressed="false" aria-label="Show the Eddington quotation"><img src="/images/catalogue-detail.jpg" alt="" width="64" height="80"></button>
-        <span class="gallery-hint">A few pages, in the world.</span>
+  </section>
+  <section class="mosaic-section" aria-label="Inside catalogue">
+    <div class="photo-mosaic" aria-label="Photographs of catalogue">
+      <div class="mosaic-column">
+        <figure class="mosaic-photo mosaic-photo-1"><img src="/images/catalogue-contents.jpg" alt="The contents page of catalogue, listing essays on inquiry, ways of knowing, philanthropy, and the Analogue Curriculum" loading="lazy"></figure>
+        <figure class="mosaic-photo mosaic-photo-4"><img src="/images/catalogue-philanthropy.jpg" alt="An open copy of catalogue showing an illustrated spread from Confessions on Modern Philanthropy" loading="lazy"></figure>
+      </div>
+      <div class="mosaic-column">
+        <figure class="mosaic-photo mosaic-photo-2"><img src="/images/catalogue-spread.jpg" alt="An open copy of catalogue held outdoors, showing the Analogue Curriculum and its shared references" loading="lazy"></figure>
+        <figure class="mosaic-photo mosaic-photo-3"><img src="/images/catalogue-detail.jpg" alt="A close-up of a page of catalogue with a quotation by Arthur Eddington" loading="lazy"></figure>
+        <figure class="mosaic-photo mosaic-photo-5"><img src="/images/catalogue-18-months.jpg" alt="An open copy of catalogue showing the 18 Months of Analogue spread with moon illustrations" loading="lazy"></figure>
       </div>
     </div>
   </section>
-  <section class="inside section-grid" id="inside" aria-labelledby="inside-title">
-    <div><p class="eyebrow">Inside the book</p><h2 id="inside-title">Ideas to<br>think with.</h2></div>
-    <div class="inside-copy"><p class="large-copy">“By offering a common set of references, we hope to provide the substrate for growing a group that is more than the sum of its people.”</p><p class="small-note">From the Analogue Curriculum, in <em>catalogue</em>.</p>
-      <ul class="contents"><li><span>Inquiry</span><span>07</span></li><li><span>A Taxonomy of R&amp;D Orgs</span><span>08</span></li><li><span>Economy of Knowing</span><span>29</span></li><li><span>Studying Inquiry</span><span>38</span></li><li><span>Confessions on Modern Philanthropy</span><span>51</span></li><li><span>Analogue Curriculum</span><span>85</span></li></ul>
-    </div>
-  </section>
   <section class="interest section-grid" id="interest" aria-labelledby="interest-title">
-    <div class="interest-intro"><p class="eyebrow">For your bookshelf</p><h2 id="interest-title">Would you<br>like a copy?</h2><p>Tell us a little about yourself and where to send it. We’ll be in touch by email if a copy is coming your way.</p><p class="small-note">If we’ve given you an invitation code, include it below. You’re welcome to register your interest without one.</p></div>
+    <div class="interest-intro"><p class="eyebrow">For your bookshelf</p><h2 id="interest-title">Would you<br>like a copy?</h2><p>Fill out this form to register your interest. If you’re selected for a copy, we’ll email you to confirm delivery details.</p></div>
     <div class="form-panel">
       {{ if .Site.Params.tallyFormId }}
-      <iframe class="tally-frame" data-tally-src="https://tally.so/embed/{{ .Site.Params.tallyFormId }}?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="1100" title="Register your interest in catalogue"></iframe>
+      <iframe class="tally-frame" data-tally-src="https://tally.so/embed/{{ .Site.Params.tallyFormId }}?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="691" frameborder="0" marginheight="0" marginwidth="0" title="Would you like a copy?"></iframe>
       <p class="small-note">Having trouble? <a href="https://tally.so/r/{{ .Site.Params.tallyFormId }}" target="_blank" rel="noopener">Open the form ↗</a></p>
-      <script src="https://tally.so/widgets/embed.js" defer></script>
+      <script>
+      var d=document,w="https://tally.so/widgets/embed.js",v=function(){
+        if(typeof Tally!=="undefined"){Tally.loadEmbeds();}
+        else{d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc;});}
+      };
+      if(typeof Tally!=="undefined"){v();}
+      else if(!d.querySelector('script[src="'+w+'"]')){var s=d.createElement("script");s.src=w;s.onload=v;s.onerror=v;d.body.appendChild(s);}
+      </script>
       {{ else }}
       <form name="catalogue-interest" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="website" id="interest-form">
         <input type="hidden" name="form-name" value="catalogue-interest">
         <p hidden><label>Leave this empty <input name="website" tabindex="-1" autocomplete="off"></label></p>
-        <fieldset><legend><span>01</span> About you</legend>
+        <fieldset><legend>About you</legend>
           <div class="form-grid">
             <label>Your name<input name="name" autocomplete="name" required maxlength="150" placeholder="Full name"></label>
             <label>Email<input name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com"></label>
@@ -51,18 +53,8 @@
             <label class="full">Anything you’d like to share? <span class="optional">Optional</span><textarea name="comments" rows="3" maxlength="3000" placeholder="What drew you to catalogue?"></textarea></label>
           </div>
         </fieldset>
-        <fieldset><legend><span>02</span> Where to send it</legend>
-          <div class="form-grid">
-            <label class="full">Street address<input name="address-line-1" autocomplete="address-line1" required maxlength="250" placeholder="Street and house number"></label>
-            <label class="full">Apartment, suite, etc. <span class="optional">Optional</span><input name="address-line-2" autocomplete="address-line2" maxlength="250" placeholder="Apartment, floor, building"></label>
-            <label>City<input name="city" autocomplete="address-level2" required maxlength="150"></label>
-            <label>State / province / region <span class="optional">If applicable</span><input name="region" autocomplete="address-level1" maxlength="150"></label>
-            <label>Postal / ZIP code <span class="optional">If applicable</span><input name="postal-code" autocomplete="postal-code" maxlength="30"></label>
-            <label>Country<input name="country" autocomplete="country-name" required maxlength="100"></label>
-          </div>
-        </fieldset>
-        <fieldset><legend><span>03</span> A little invitation</legend><label>Invitation code <span class="optional">Optional</span><input name="invitation-code" type="password" autocomplete="off" maxlength="100" aria-describedby="code-note" placeholder="If we’ve shared one with you"></label><p class="small-note" id="code-note">No code? Leave this blank.</p></fieldset>
-        <label class="consent"><input type="checkbox" name="consent" value="yes" required><span>I’m happy for analogue.press to use these details to contact me about <em>catalogue</em> and arrange delivery if selected.</span></label>
+        <fieldset><legend>Invitation code</legend><label>Invitation code <span class="optional">Optional</span><input name="invitation-code" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="100" aria-describedby="code-note" placeholder="If we’ve shared one with you"></label><p class="small-note" id="code-note">No code? Leave this blank.</p></fieldset>
+        <label class="consent"><input type="checkbox" name="consent" value="yes" required><span>I’m happy for analogue.press to use these details to contact me about receiving a copy of <em>catalogue</em>.</span></label>
         <button class="button" type="submit">Send your interest <span aria-hidden="true">↗</span></button>
         <p class="small-note form-note">Registering your interest doesn’t guarantee a copy.</p>
       </form>
